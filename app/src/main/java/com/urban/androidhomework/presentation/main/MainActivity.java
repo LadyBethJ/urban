@@ -1,4 +1,4 @@
-package com.urban.androidhomework;
+package com.urban.androidhomework.presentation.main;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,13 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.urban.androidhomework.presentation.characters.CharacterFragment;
+import com.urban.androidhomework.presentation.characters.CharactersAdapter;
+import com.urban.androidhomework.data.repository.NetworkClient;
+import com.urban.androidhomework.R;
+import com.urban.androidhomework.domain.model.Character;
+import com.urban.androidhomework.utils.Utils;
 
 import io.reactivex.SingleObserver;
 import io.reactivex.android.schedulers.AndroidSchedulers;
